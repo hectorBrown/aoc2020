@@ -18,11 +18,11 @@ for group in data:
                 count += 1
 print(count)
 #%%
-data = ''.join(open("Data/day6_ex.txt",'r').readlines()).translate({ord('\n'): ord(' ')})[:-1].split("  ")
+data = ''.join(open("Data/day6.txt",'r').readlines()).translate({ord('\n'): ord(' ')})[:-1].split("  ")
 count = 0
 for group in data:
     answered = []
     for person in group.split(' '):
         answered.append(list(person))
-    count += len([all([x in y for y in answered[1:]]) for x in answered[0]])
+    count += len([x for x in answered[0] if all([x in y for y in answered[1:]])])
 print(count)
