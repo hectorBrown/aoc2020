@@ -5,7 +5,7 @@ Created on Fri Dec  4 10:55:35 2020
 @author: Hector
 """
 req = ["byr","iyr","eyr","hgt","hcl","ecl","pid"]
-dat = [{y.split(':')[0]:y.split(':')[1] for y in x.split(' ')} for x in ''.join(open("Data\day4.txt",'r').readlines()).translate({ord('\n'): ord(' ')}).split("  ")]
+dat = [{y.split(':')[0]:y.split(':')[1] for y in x.split(' ')} for x in ''.join(open("Data/day4.txt",'r').readlines()).translate({ord('\n'): ord(' ')}).split("  ")]
 print(sum([int(all([y in x.keys() for y in req])) for x in dat]))
 #%%
 val_ecl = ["amb", "blu", "brn", "gry", "grn", "hzl", "oth"]
@@ -27,5 +27,5 @@ def valid(_pass):
     rules.append(_pass["ecl"] in val_ecl)
     rules.append(len(_pass["pid"]) == 9 and all([x in [str(i) for i in range(10)] for x in _pass["pid"]]))
     return all(rules)
-dat = [{y.split(':')[0]:y.split(':')[1] for y in x.split(' ')} for x in ''.join(open("Data\day4.txt",'r').readlines()).translate({ord('\n'): ord(' ')}).split("  ")]
-print(sum([int(valid(x)) for x in dat]))
+dat = [{y.split(':')[0]:y.split(':')[1] for y in x.split(' ')} for x in ''.join(open("Data/day4.txt",'r').readlines()).translate({ord('\n'): ord(' ')}).split("  ")]
+print(sum([int(valid(x)) for x in dat])):
