@@ -26,10 +26,11 @@ print(acc)
 #%%
 def valid(commands):
     i = 0
-    command = data[i]
-    visited.append(i)
     acc = 0
+    visited = []
     while True:
+        command = commands[i]
+        visited.append(i)
         if command[0] == "acc":
             acc += int(command[1])
             i += 1
@@ -41,7 +42,28 @@ def valid(commands):
             return False
         elif i == len(commands) - 1:
             return True
+def getacc(commands):
+    i = 0
+    acc = 0
+    while True:
+        command = commands[i]
+        if command[0] == "acc":
+            acc += int(command[1])
+            i += 1
+        elif command[0] == "jmp":
+            i += int(command[1])
+        elif command[0] == "nop":
+            i += 1
+        if i == len(commands):
+            break
+    return acc
     
 data = [x[:-1].split(' ') for x in open("Data/day8.txt").readlines()]
-data[:-2][0] = "nop"
-print(valid(data))
+for i,command in enumerate(data):
+    if command[0] == "nop" or command[0] == "jmp":
+        new = data.copy()
+        new[i] = data[i].copy()
+        new[i][0] = "jmp" if command[0] == "nop" else "nop"
+        if valid(new):
+            print(getacc(new))
+    
