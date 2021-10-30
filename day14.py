@@ -29,7 +29,7 @@ def decimal(val):
         if c == '1':
             res += 2**i
     return res
-data = [x[:-1].split(" = ") for x in open("Data/day14.txt",'r').readlines()]
+data = [x[:-1].split(" = ") for x in open("data/day14.txt",'r').readlines()]
 mask = ""
 mem = {}
 for command in data:
@@ -77,7 +77,7 @@ def decimal(val):
         if c == '1':
             res += 2**i
     return res
-data = [x[:-1].split(" = ") for x in open("Data/day14.txt",'r').readlines()]
+data = [x[:-1].split(" = ") for x in open("data/day14.txt",'r').readlines()]
 mask = ""
 mem = {}
 for command in data:

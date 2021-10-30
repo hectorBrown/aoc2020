@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 class Cube:
     def __init__(self, x, y, z):
         self.x = x; self.y = y; self.z = z
@@ -32,7 +33,7 @@ def map(z, cubes):
                 else:
                     s += '.'
             print(s)
-data = [x[:-1] for x in open("Data/day17.txt",'r').readlines()]
+data = [x[:-1] for x in open("data/day17.txt",'r').readlines()]
 cubes = []
 for y,line in enumerate(data):
     for x,c in enumerate(line):
@@ -75,7 +76,7 @@ def count_neighbours4(x,y,z,w,cubes):
                         if Hypercube(x + x_s, y + y_s, z + z_s, w + w_s) in hypercubes:
                             count += 1
     return count
-data = [x[:-1] for x in open("Data/day17.txt",'r').readlines()]
+data = [x[:-1] for x in open("data/day17.txt",'r').readlines()]
 hypercubes = []
 for y,line in enumerate(data):
     for x,c in enumerate(line):

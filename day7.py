@@ -23,7 +23,7 @@ def unique(li):
         if not elem in res:
             res.append(elem)
     return res
-data = [x[:-1].split(' ') for x in open("Data/day7.txt",'r')][:-1]
+data = [x[:-1].split(' ') for x in open("data/day7.txt",'r')][:-1]
 colors = {}
 for line in data:
     color1 = ''.join(line[:2])
@@ -49,7 +49,7 @@ def no_of_children(color):
     for child in colors[color].children:
         no += colors[color].children[child] * no_of_children(child.name)
     return no
-data = [x[:-1].split(' ') for x in open("Data/day7.txt",'r')][:-1]
+data = [x[:-1].split(' ') for x in open("data/day7.txt",'r')][:-1]
 colors = {}
 for line in data:
     color1 = ''.join(line[:2])

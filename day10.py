@@ -6,7 +6,7 @@ Created on Thu Dec 10 19:07:52 2020
 @author: hex
 """
 
-data = [int(x[:-1]) for x in open("Data/day10.txt",'r').readlines()]
+data = [int(x[:-1]) for x in open("data/day10.txt",'r').readlines()]
 data.sort()
 differences = [min(data), 3]
 for i,adap in enumerate(data):
@@ -19,7 +19,7 @@ class Adapter:
         self.parents = []
         self.val = value
         self.routes = 1
-data = [int(x[:-1]) for x in open("Data/day10.txt",'r').readlines()]
+data = [int(x[:-1]) for x in open("data/day10.txt",'r').readlines()]
 data.sort()
 adapters = {0: Adapter(0)}
 routes = {0: 0}

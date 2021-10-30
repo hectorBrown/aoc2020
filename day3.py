@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
 Created on Thu Dec  3 11:59:49 2020
@@ -5,7 +6,7 @@ Created on Thu Dec  3 11:59:49 2020
 @author: Hector
 """
 
-f = open("Data\day3.txt")
+f = open("data/day3.txt")
 dat = f.readlines()
 _map = [list(x[:-1]) for x in dat]
 pos = [0,0]
@@ -31,7 +32,7 @@ def count(slope):
         if pos[1] >= len(_map[0]):
             pos[1] -= len(_map[0])
     return counter
-f = open("Data\day3.txt")
+f = open("data/day3.txt")
 dat = f.readlines()
 _map = [list(x[:-1]) for x in dat]
 slopes = [[1,1],[3,1],[5,1],[7,1],[1,2]]

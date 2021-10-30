@@ -6,7 +6,7 @@ Created on Sun Dec  6 20:24:14 2020
 @author: hex
 """
 
-dat = [x[:-1] for x in open("Data/day5.txt",'r').readlines()][:-1]
+dat = [x[:-1] for x in open("data/day5.txt",'r').readlines()][:-1]
 ids = []
 for seat in dat:
     row_ran = 128
@@ -24,7 +24,7 @@ for seat in dat:
     ids.append(lowest_row * 8 + lowest_col)
 print(max(ids))
 #%%
-dat = [x[:-1] for x in open("Data/day5.txt",'r').readlines()][:-1]
+dat = [x[:-1] for x in open("data/day5.txt",'r').readlines()][:-1]
 ids = []
 for seat in dat:
     row_ran = 128

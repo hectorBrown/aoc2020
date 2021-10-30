@@ -14,7 +14,7 @@ def count_occ(mat, i, j):
                 if mat[i + i_s][j + j_s] == '#':
                     count += 1
     return count
-data = [list(x[:-1]) for x in open("Data/day11.txt",'r').readlines()]
+data = [list(x[:-1]) for x in open("data/day11.txt",'r').readlines()]
 changed = True
 while changed:
     changed = False
@@ -46,7 +46,7 @@ def count_occ(mat, i, j):
                     i_s += i_d
                     j_s += j_d
     return count
-data = [list(x[:-1]) for x in open("Data/day11.txt",'r').readlines()]
+data = [list(x[:-1]) for x in open("data/day11.txt",'r').readlines()]
 changed = True
 while changed:
     changed = False

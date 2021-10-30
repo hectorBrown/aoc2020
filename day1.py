@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
 Created on Tue Dec  1 13:14:47 2020
@@ -5,7 +6,7 @@ Created on Tue Dec  1 13:14:47 2020
 @author: Hector
 """
 
-f = open("Data\day1.txt",'r')
+f = open("data/day1.txt",'r')
 dat = [int(x[:-1]) for x in f.readlines()]
 for i,x in enumerate(dat[:-1]):
     for y in dat[i + 1:]:
@@ -13,7 +14,7 @@ for i,x in enumerate(dat[:-1]):
             print(x*y)
 
 #%%
-f = open("Data\day1.txt",'r')
+f = open("data/day1.txt",'r')
 dat = [int(x[:-1]) for x in f.readlines()]
 for i,x in enumerate(dat):
     others = dat.copy()

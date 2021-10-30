@@ -33,7 +33,7 @@ def rotate_dir(step, _dir):
         else:
             _dir = [1,0]
     return _dir
-data = [[x[:-1][0], int(x[:-1][1:])] for x in open("Data/day12.txt",'r').readlines()]
+data = [[x[:-1][0], int(x[:-1][1:])] for x in open("data/day12.txt",'r').readlines()]
 pos = [0,0]
 _dir = [1,0]
 for command in data:
@@ -62,7 +62,7 @@ def rotate_way(step, way):
     for i in range(step):
         way[0],way[1] = -way[1],way[0]
     return way
-data = [[x[:-1][0], int(x[:-1][1:])] for x in open("Data/day12.txt",'r').readlines()]
+data = [[x[:-1][0], int(x[:-1][1:])] for x in open("data/day12.txt",'r').readlines()]
 pos = [0,0]
 way = [10,1]
 for command in data:

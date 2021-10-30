@@ -7,7 +7,8 @@ Created on Sun Dec  6 20:36:06 2020
 """
 
 
-data = ''.join(open("Data/day6.txt",'r').readlines()).translate({ord('\n'): ord(' ')})[:-1].split("  ")
+data = ''.join(open("data/day6.txt",'r').readlines()).translate({ord('
+'): ord(' ')})[:-1].split("  ")
 count = 0
 for group in data:
     answered = []
@@ -18,7 +19,8 @@ for group in data:
                 count += 1
 print(count)
 #%%
-data = ''.join(open("Data/day6.txt",'r').readlines()).translate({ord('\n'): ord(' ')})[:-1].split("  ")
+data = ''.join(open("data/day6.txt",'r').readlines()).translate({ord('
+'): ord(' ')})[:-1].split("  ")
 count = 0
 for group in data:
     answered = []

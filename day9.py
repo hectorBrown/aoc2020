@@ -16,7 +16,7 @@ def get_all_combos(li):
 
 
 preamble = 25
-data = [int(x) for x in open("Data/day9.txt",'r').readlines()]
+data = [int(x) for x in open("data/day9.txt",'r').readlines()]
 for i in range(preamble, len(data)):
     _range = data[i - preamble:i]
     if not data[i] in get_all_combos(_range):
@@ -34,7 +34,7 @@ def get_all_combos(li):
 
 preamble = 25
 broken = 0
-data = [int(x) for x in open("Data/day9.txt",'r').readlines()]
+data = [int(x) for x in open("data/day9.txt",'r').readlines()]
 for i in range(preamble, len(data)):
     _range = data[i - preamble:i]
     if not data[i] in get_all_combos(_range):

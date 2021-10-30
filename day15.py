@@ -12,13 +12,13 @@ def get_next(history):
         return temp[1:].index(temp[0]) + 1
     else:
         return 0
-dat = [int(x) for x in open("Data/day15.txt",'r').readline()[:-1].split(',')]
+dat = [int(x) for x in open("data/day15.txt",'r').readline()[:-1].split(',')]
 target = 2020
 for i in range(target - len(dat)):
     dat.append(get_next(dat))
 print(dat[-1])
 #%%
-dat = [int(x) for x in open("Data/day15.txt",'r').readline()[:-1].split(',')]
+dat = [int(x) for x in open("data/day15.txt",'r').readline()[:-1].split(',')]
 target = 30000000
 spoken = {}
 for i,term in enumerate(dat[:-1]):

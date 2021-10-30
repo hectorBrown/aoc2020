@@ -14,10 +14,15 @@ def valid(rules,prop):
         return False
     else:
         return True
-data = ''.join(open("Data/day16.txt",'r')).split("\n\n")
-rules = {x.split(':')[0]:[[int(z) for z in y.split('-')] for y in x.split(':')[1].split(" or ")] for x in data[0].split("\n")}
-my_tick = [int(x) for x in data[1].split('\n')[1].split(',')]
-near_ticks = [[int(y) for y in x.split(',')] for x in data[2].split('\n')[1:-1]]
+data = ''.join(open("data/day16.txt",'r')).split("
+
+")
+rules = {x.split(':')[0]:[[int(z) for z in y.split('-')] for y in x.split(':')[1].split(" or ")] for x in data[0].split("
+")}
+my_tick = [int(x) for x in data[1].split('
+')[1].split(',')]
+near_ticks = [[int(y) for y in x.split(',')] for x in data[2].split('
+')[1:-1]]
 error_rate = 0
 for near_tick in near_ticks:
     for prop in near_tick:
@@ -38,10 +43,15 @@ def valid_rules(rules,prop):
         if rulevalidity:
             valid_rules.append(rule)
     return valid_rules
-data = ''.join(open("Data/day16.txt",'r')).split("\n\n")
-rules = {x.split(':')[0]:[[int(z) for z in y.split('-')] for y in x.split(':')[1].split(" or ")] for x in data[0].split("\n")}
-my_tick = [int(x) for x in data[1].split('\n')[1].split(',')]
-near_ticks = [[int(y) for y in x.split(',')] for x in data[2].split('\n')[1:-1]]
+data = ''.join(open("data/day16.txt",'r')).split("
+
+")
+rules = {x.split(':')[0]:[[int(z) for z in y.split('-')] for y in x.split(':')[1].split(" or ")] for x in data[0].split("
+")}
+my_tick = [int(x) for x in data[1].split('
+')[1].split(',')]
+near_ticks = [[int(y) for y in x.split(',')] for x in data[2].split('
+')[1:-1]]
 to_pop = []
 for i, near_tick in enumerate(near_ticks):
     for prop in near_tick:

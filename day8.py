@@ -6,7 +6,7 @@ Created on Tue Dec  8 09:23:40 2020
 @author: hex
 """
 
-data = [x[:-1].split(' ') for x in open("Data/day8.txt").readlines()]
+data = [x[:-1].split(' ') for x in open("data/day8.txt").readlines()]
 acc = 0
 i = 0
 visited = []
@@ -58,7 +58,7 @@ def getacc(commands):
             break
     return acc
     
-data = [x[:-1].split(' ') for x in open("Data/day8.txt").readlines()]
+data = [x[:-1].split(' ') for x in open("data/day8.txt").readlines()]
 for i,command in enumerate(data):
     if command[0] == "nop" or command[0] == "jmp":
         new = data.copy()
