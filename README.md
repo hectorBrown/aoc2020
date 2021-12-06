@@ -7,4 +7,4 @@ Some files contain commented out visualisations, interesting results etc.
 
 Forgive the long lines.
 
-Also, I switched OS half way through. If certain days aren't running on your system (early ones were built on win, late with linux), try changing the `\` to a `/` in the filepath (or vice versa).
+Also, I switched OS half way through. If certain days aren't running on your system (early ones were built on win, late with linux), try changing the `\` to a `/` in the file path (or vice versa).
