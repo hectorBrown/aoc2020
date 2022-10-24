@@ -1,4 +1,4 @@
-PATH = "day10/data.txt"
+PATH = "10/data.txt"
 class Adapter:
     def __init__(self, value):
         self.parents = []

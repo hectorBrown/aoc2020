@@ -1,4 +1,4 @@
-PATH = "day7/data.txt"
+PATH = "7/data.txt"
 
 class Color:
     def __init__(self, name):

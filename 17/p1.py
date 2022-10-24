@@ -1,4 +1,4 @@
-PATH = "day17/data.txt"
+PATH = "17/data.txt"
 class Cube:
     def __init__(self, x, y, z):
         self.x = x; self.y = y; self.z = z

@@ -1,4 +1,4 @@
-PATH = "day14/data.txt"
+PATH = "14/data.txt"
 def assign(add, mask, mem, val):
     val = list(val)
     for i,c in enumerate(mask):

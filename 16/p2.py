@@ -1,4 +1,4 @@
-PATH = "day16/data.txt"
+PATH = "16/data.txt"
 def valid(rules,prop):
     validity = []
     for rule in rules:

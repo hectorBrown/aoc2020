@@ -1,4 +1,4 @@
-PATH = "day17/data.txt"
+PATH = "17/data.txt"
 #THIS ONE TAKES AGES
 class Hypercube:
     def __init__(self, x, y, z, w):

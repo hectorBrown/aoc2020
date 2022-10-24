@@ -1,4 +1,4 @@
-PATH = "day18/data.txt"
+PATH = "18/data.txt"
 
 def calculate(expr):
     #find top level bracket expressions and call recursively

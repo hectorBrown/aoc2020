@@ -1,4 +1,4 @@
-PATH = "day5/data.txt"
+PATH = "5/data.txt"
 
 dat = [x[:-1] for x in open(PATH).readlines()][:-1]
 ids = []

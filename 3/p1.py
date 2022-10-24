@@ -1,4 +1,4 @@
-PATH = "day3/data.txt"
+PATH = "3/data.txt"
 
 f = open(PATH)
 dat = f.readlines()

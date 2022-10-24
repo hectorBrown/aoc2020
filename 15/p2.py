@@ -1,4 +1,4 @@
-PATH = "day15/data.txt"
+PATH = "15/data.txt"
 dat = [int(x) for x in open(PATH).readline()[:-1].split(',')]
 target = 30000000
 spoken = {}

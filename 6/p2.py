@@ -1,4 +1,4 @@
-PATH = "day6/data.txt"
+PATH = "6/data.txt"
 data = ''.join(open(PATH).readlines()).translate({ord('
 '): ord(' ')})[:-1].split("  ")
 count = 0

@@ -1,4 +1,4 @@
-PATH = "day8/data.txt"
+PATH = "8/data.txt"
 
 data = [x[:-1].split(' ') for x in open(PATH).readlines()]
 acc = 0

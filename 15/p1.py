@@ -1,4 +1,4 @@
-PATH = "day15/data.txt"
+PATH = "15/data.txt"
 def get_next(history):
     temp = history.copy()
     temp.reverse()

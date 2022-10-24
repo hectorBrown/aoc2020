@@ -1,4 +1,4 @@
-PATH = "day1/data.txt"
+PATH = "1/data.txt"
 
 f = open(PATH)
 dat = [int(x[:-1]) for x in f.readlines()]

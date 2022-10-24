@@ -1,4 +1,4 @@
-PATH = "day3/data.txt"
+PATH = "3/data.txt"
 
 def count(slope):
     pos = [0,0]

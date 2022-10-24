@@ -1,4 +1,4 @@
-PATH = "day13/data.txt"
+PATH = "13/data.txt"
 
 f = open(PATH)
 depart = int(f.readline())

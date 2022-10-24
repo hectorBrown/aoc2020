@@ -1,4 +1,4 @@
-PATH = "day11/data.txt"
+PATH = "11/data.txt"
 def count_occ(mat, i, j):
     count = 0
     for i_d in range(-1, 2):

@@ -1,4 +1,4 @@
-PATH = "day2/data.txt"
+PATH = "2/data.txt"
 def valid(l):
     char = l[0][-1:]
     passw = l[1][1:]

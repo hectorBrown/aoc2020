@@ -1,4 +1,4 @@
-PATH = "day10/data.txt"
+PATH = "10/data.txt"
 
 data = [int(x[:-1]) for x in open(PATH).readlines()]
 data.sort()

@@ -1,4 +1,4 @@
-PATH = "day13/data.txt"
+PATH = "13/data.txt"
 #I did this part mostly on paper so here's some explanation
 #buses are made of [a,d] where a and d are the start and step of an arithmetic sequence
 #combine folds left and finds the sequence of times where those buses immediately follow eachother

@@ -1,4 +1,4 @@
-PATH = "day9/data.txt"
+PATH = "9/data.txt"
 def get_all_combos(li):
     res = []
     for i,elem1 in enumerate(li):

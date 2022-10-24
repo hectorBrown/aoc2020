@@ -1,4 +1,4 @@
-PATH = "day2/data.txt"
+PATH = "2/data.txt"
 
 
 def valid(l):

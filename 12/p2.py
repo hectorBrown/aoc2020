@@ -1,4 +1,4 @@
-PATH = "day12/data.txt"
+PATH = "12/data.txt"
 def run(command, pos, way):
     if command[0] == 'N':
         way[1] += command[1]
